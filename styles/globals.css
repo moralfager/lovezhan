@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+}
+
+.cosmic-gradient {
+  background: radial-gradient(circle at top, rgba(255, 45, 146, 0.35), transparent 55%),
+    radial-gradient(circle at bottom, rgba(255, 154, 198, 0.25), transparent 55%),
+    radial-gradient(circle at center, rgba(255, 255, 255, 0.06), transparent 60%),
+    #02010a;
+}
+
+.neon-text {
+  text-shadow:
+    0 0 12px rgba(255, 45, 146, 0.9),
+    0 0 32px rgba(255, 45, 146, 0.9),
+    0 0 60px rgba(255, 154, 198, 0.9);
+}
+
+.soft-glow {
+  box-shadow:
+    0 0 20px rgba(255, 45, 146, 0.55),
+    0 0 60px rgba(255, 154, 198, 0.45);
+}
+
+.heart-mask {
+  clip-path: path(
+    "M 50 15 C 35 -5 0 0 0 30 C 0 55 25 70 50 90 C 75 70 100 55 100 30 C 100 0 65 -5 50 15 Z"
+  );
+}
+
