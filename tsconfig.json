@@ -23,11 +23,6 @@
         "*"
       ]
     },
-    "types": [
-      "@types/node",
-      "@types/react",
-      "@types/react-dom"
-    ],
     "incremental": true
   },
   "include": [
